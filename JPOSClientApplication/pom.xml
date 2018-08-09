@@ -9,7 +9,7 @@
         <repository>
             <id>oracle</id>
             <name>Oracle repo</name>
-            <url>http://download.oracle.com/maven</url>
+            <url>https://maven.oracle.com</url>
         </repository>
     </repositories>
     <dependencies>
