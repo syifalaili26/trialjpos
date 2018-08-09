@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:36.942 ICT 2018">
+  <info>
+    start Thread[Thread-5,5,main]
+  </info>
+</log>
+<log realm="HostQServer502.server" at="Thu Aug 09 09:23:36.951 ICT 2018" lifespan="1ms">
+  <iso-server>
+    listening on port 2018
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:36.953 ICT 2018" lifespan="4ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:36.954 ICT 2018" lifespan="6ms">
+  <info>
+    start Thread[Thread-6,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:37.038 ICT 2018" lifespan="90ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:37.040 ICT 2018" lifespan="92ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:56142" at="Thu Aug 09 09:23:44.919 ICT 2018" lifespan="1ms">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:56142" at="Thu Aug 09 09:23:45.769 ICT 2018" lifespan="850ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000809"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:56142" at="Thu Aug 09 09:23:45.777 ICT 2018" lifespan="1ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000809"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 09:23:45.781 ICT 2018" lifespan="8ms">
+  <debug>
+    SimpleTransactionManager-3:idle:1
+            prepare: com.gl.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.gl.participant.TransactionResponseParticipant
+            prepare: com.gl.participant.SenderResponseParticipant
+             commit: com.gl.participant.TransactionResponseParticipant
+             commit: com.gl.participant.SenderResponseParticipant
+    in-transit=0, head=2, tail=2, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0.00, elapsed=6ms
+    <profiler>
+      prepare: com.gl.selector.Selector [0.8/0.8]
+      prepare: com.gl.participant.TransactionResponseParticipant [0.7/1.5]
+      prepare: com.gl.participant.SenderResponseParticipant [0.1/1.7]
+       commit: com.gl.participant.TransactionResponseParticipant [0.1/1.9]
+       commit: com.gl.participant.SenderResponseParticipant [3.3/5.2]
+      end [1.8/7.0]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:56142" at="Thu Aug 09 09:23:45.796 ICT 2018" lifespan="23ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:56142" at="Thu Aug 09 09:23:45.797 ICT 2018">
+  <session-end/>
+</log>
