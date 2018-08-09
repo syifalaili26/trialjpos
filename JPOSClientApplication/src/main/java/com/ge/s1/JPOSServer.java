@@ -15,7 +15,7 @@ public class JPOSServer implements ISORequestListener{
         logger.addListener(new SimpleLogListener(System.out));
         ServerChannel sChannel = new ASCIIChannel("localhost",2300,new ISO87APackager());
         ((LogSource)sChannel).setLogger(logger,"server-channel-logger");
-        ISOServer isoServer = new ISOServer(2300,sChannel,null);
+        ISOServer isoServer = new ISOServer(1800,sChannel,null);
         isoServer.setLogger(logger,"server-logger");
         //Asign ISOListener Process
         isoServer.addISORequestListener(new JPOSServer());
@@ -23,7 +23,7 @@ public class JPOSServer implements ISORequestListener{
 
     }
 
-    //@Override
+    @Override
     public boolean process(ISOSource isoSource, ISOMsg isoMsg) {
 
         ISOMsg m = (ISOMsg) isoMsg.clone();

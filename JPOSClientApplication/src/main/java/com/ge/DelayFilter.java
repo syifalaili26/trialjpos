@@ -13,7 +13,7 @@ public class DelayFilter implements ISOFilter{
     public DelayFilter(int delay){
         this.delay = delay;
     }
-    //@Override
+    @Override
     public ISOMsg filter(ISOChannel isoChannel, ISOMsg isoMsg, LogEvent logEvent) throws VetoException {
         logEvent.addMessage ("<delay-filter delay=\""+delay+"\"/>");
         if (delay > 0) {

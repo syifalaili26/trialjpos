@@ -17,7 +17,7 @@ public class JPOSClient {
         Logger logger = new Logger();
         logger.addListener(new SimpleLogListener(System.out));
         //Change to FilteredChannel
-        FilteredChannel channel = new ASCIIChannel("localhost",2300,new ISO87APackager());
+        FilteredChannel channel = new ASCIIChannel("localhost",1800,new ISO87APackager());
         //Initialize DelayFilter to delay message in 5 second
         DelayFilter delayFilter = new DelayFilter(5000);
         //Assign the filter
