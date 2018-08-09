@@ -25,12 +25,12 @@ public class JPOSClient {
         ((LogSource) channel).setLogger(logger, "client-logger");
         try {
             channel.connect();
-            ISOMsg m = new ISOMsg ();
-            m.setMTI ("0800");
-            m.set (3, "000000");
-            m.set (41, "00000001");
-            m.set (70, "301");
-            channel.send(m);
+            ISOMsg message = new ISOMsg ();
+            message.setMTI ("0800");
+            message.set (3, "000000");
+            message.set (41, "00000001");
+            message.set (70, "301");
+            channel.send(message);
             //Get incoming message
             ISOMsg incoming = channel.receive();
             System.out.println(incoming.pack());
