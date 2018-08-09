@@ -5693,3 +5693,115 @@ Caused by: java.lang.ClassNotFoundException: src.main.java.com.learn.listener.Se
     </profiler>
   </debug>
 </log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Thu Aug 09 21:08:50.576 ICT 2018">
+  <iso-server>
+    listening on port 8080
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:50.578 ICT 2018">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:50.580 ICT 2018" lifespan="2ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:50.581 ICT 2018" lifespan="3ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:50.583 ICT 2018" lifespan="4ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:50.584 ICT 2018" lifespan="5ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:63987" at="Thu Aug 09 21:08:50.585 ICT 2018" lifespan="2ms">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:8080" at="Thu Aug 09 21:08:50.586 ICT 2018" lifespan="21ms">
+  <connect>
+    localhost:8080
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:63991" at="Thu Aug 09 21:08:55.817 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:63991" at="Thu Aug 09 21:08:56.402 ICT 2018" lifespan="584ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000809"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:63991" at="Thu Aug 09 21:08:56.410 ICT 2018" lifespan="1ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000809"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Thu Aug 09 21:08:56.414 ICT 2018" lifespan="7ms">
+  <debug>
+    SimpleTransactionManager-4:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+    in-transit=0, head=2, tail=2, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0.00, elapsed=7ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.4/0.4]
+      prepare: com.learn.participant.TransactionResponseParticipant [0.6/1.0]
+      prepare: com.learn.participant.SenderResponseParticipant [0.1/1.2]
+       commit: com.learn.participant.TransactionResponseParticipant [0.1/1.3]
+       commit: com.learn.participant.SenderResponseParticipant [3.8/5.2]
+      end [2.1/7.3]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:63991" at="Thu Aug 09 21:08:56.758 ICT 2018" lifespan="352ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:63991" at="Thu Aug 09 21:08:56.759 ICT 2018">
+  <session-end/>
+</log>
