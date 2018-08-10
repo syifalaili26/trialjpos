@@ -11,7 +11,7 @@ import com.learn.repository.Repository;
 
 @RestController
 public class ISORestController {
-	@RequestMapping(value = "isomsg", method = RequestMethod.GET)
+	@RequestMapping(value = "/isomsg", method = RequestMethod.GET)
 	public MessageEntity getMessageRest() {
 		Repository repository = Repository.getInstance();
 		ISOMsg message = repository.getMessage();

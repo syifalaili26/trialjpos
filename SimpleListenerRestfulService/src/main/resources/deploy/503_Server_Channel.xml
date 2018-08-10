@@ -2,7 +2,7 @@
     <channel class="org.jpos.iso.channel.ASCIIChannel" logger="Q2"
              packager="org.jpos.iso.packager.ISO87APackager">
         <property name="host" value="localhost" />
-        <property name="port" value="8080" />
+        <property name="port" value="2500" />
         <property name="timeout" value="360000" />
     </channel>
     <in>server-send</in>

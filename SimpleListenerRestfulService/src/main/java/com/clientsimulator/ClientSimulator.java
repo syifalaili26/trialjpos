@@ -19,7 +19,7 @@ public class ClientSimulator {
 		// TODO Auto-generated method stub
 		Logger logger = new Logger();
         logger.addListener(new SimpleLogListener(System.out));
-        ISOChannel channel = new ASCIIChannel("localhost",8080,new ISO87APackager());
+        ISOChannel channel = new ASCIIChannel("localhost",2500,new ISO87APackager());
         ((LogSource) channel).setLogger(logger,"channel");
         channel.connect();
 

@@ -1,5 +1,5 @@
 <server class="org.jpos.q2.iso.QServer" logger="Q2" name="HostQServer502">
-    <attr name="port" type="java.lang.Integer">8080</attr>
+    <attr name="port" type="java.lang.Integer">2500</attr>
     <attr name="maxSessions" type="java.lang.Integer">20</attr>
     <attr name="minSessions" type="java.lang.Integer">10</attr>
 
