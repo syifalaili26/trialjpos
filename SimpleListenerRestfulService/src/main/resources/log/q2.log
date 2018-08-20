@@ -7686,3 +7686,1439 @@ Caused by: java.lang.ClassNotFoundException: com.learn.listener.ServerApplicatio
 <log realm="HostQServer502.server.session/127.0.0.1:65399" at="Fri Aug 10 10:17:08.235 ICT 2018">
   <session-end/>
 </log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 16:32:13.316 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:32:13.388 ICT 2018" lifespan="8ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:32:13.494 ICT 2018" lifespan="129ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:32:13.568 ICT 2018" lifespan="205ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:32:13.611 ICT 2018" lifespan="248ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:32:13.730 ICT 2018" lifespan="369ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 16:32:13.973 ICT 2018" lifespan="742ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59369" at="Mon Aug 20 16:32:14.020 ICT 2018" lifespan="2ms">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59394" at="Mon Aug 20 16:34:32.370 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59394" at="Mon Aug 20 16:34:39.545 ICT 2018" lifespan="7165ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59394" at="Mon Aug 20 16:34:39.646 ICT 2018" lifespan="12ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:34:39.873 ICT 2018" lifespan="263ms">
+  <debug>
+    SimpleTransactionManager-2:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+    in-transit=0, head=2, tail=2, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=256ms
+    <profiler>
+      prepare: com.learn.selector.Selector [1.4/1.4]
+      prepare: com.learn.participant.TransactionResponseParticipant [15.8/17.3]
+      prepare: com.learn.participant.SenderResponseParticipant [0.4/17.7]
+       commit: com.learn.participant.TransactionResponseParticipant [0.5/18.3]
+       commit: com.learn.participant.SenderResponseParticipant [112.5/130.9]
+      end [131.5/262.5]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59394" at="Mon Aug 20 16:34:40.391 ICT 2018" lifespan="795ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59394" at="Mon Aug 20 16:34:40.402 ICT 2018">
+  <session-end/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 16:37:02.467 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:37:02.531 ICT 2018" lifespan="1ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:37:02.549 ICT 2018" lifespan="1ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:37:02.607 ICT 2018" lifespan="108ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:37:02.630 ICT 2018" lifespan="84ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:37:02.651 ICT 2018" lifespan="106ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 16:37:02.883 ICT 2018" lifespan="580ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59410" at="Mon Aug 20 16:37:02.914 ICT 2018">
+  <session-start/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 16:39:41.264 ICT 2018" lifespan="1ms">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:39:41.293 ICT 2018" lifespan="7ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:39:41.333 ICT 2018" lifespan="20ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:39:41.342 ICT 2018" lifespan="27ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:39:41.352 ICT 2018" lifespan="11ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:39:41.363 ICT 2018" lifespan="36ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 16:39:41.767 ICT 2018" lifespan="599ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59419" at="Mon Aug 20 16:39:41.845 ICT 2018">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59462" at="Mon Aug 20 16:43:28.454 ICT 2018">
+  <session-start/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 16:44:16.791 ICT 2018" lifespan="9ms">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:44:16.828 ICT 2018" lifespan="3ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:44:16.872 ICT 2018" lifespan="48ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:44:16.882 ICT 2018" lifespan="58ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:44:16.897 ICT 2018" lifespan="74ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:44:16.916 ICT 2018" lifespan="101ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 16:44:17.361 ICT 2018" lifespan="657ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59477" at="Mon Aug 20 16:44:17.392 ICT 2018">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59493" at="Mon Aug 20 16:46:11.498 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59493" at="Mon Aug 20 16:46:26.321 ICT 2018" lifespan="14812ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59493" at="Mon Aug 20 16:46:26.401 ICT 2018" lifespan="12ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 16:46:26.479 ICT 2018" lifespan="101ms">
+  <debug>
+    SimpleTransactionManager-1:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+    in-transit=0, head=2, tail=2, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=98ms
+    <profiler>
+      prepare: com.learn.selector.Selector [1.2/1.2]
+      prepare: com.learn.participant.TransactionResponseParticipant [4.3/5.6]
+      prepare: com.learn.participant.SenderResponseParticipant [1.1/6.8]
+       commit: com.learn.participant.TransactionResponseParticipant [0.9/7.7]
+       commit: com.learn.participant.SenderResponseParticipant [46.6/54.4]
+      end [111.2/165.6]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59493" at="Mon Aug 20 16:46:27.591 ICT 2018" lifespan="1214ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59493" at="Mon Aug 20 16:46:27.600 ICT 2018" lifespan="1ms">
+  <session-end/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 17:05:20.684 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:05:20.784 ICT 2018" lifespan="1ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:05:20.818 ICT 2018" lifespan="195ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:05:20.845 ICT 2018" lifespan="61ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:05:20.879 ICT 2018" lifespan="95ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59581" at="Mon Aug 20 17:05:20.923 ICT 2018">
+  <session-start/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:05:20.948 ICT 2018">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:05:21.016 ICT 2018" lifespan="233ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59593" at="Mon Aug 20 17:07:14.087 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59593" at="Mon Aug 20 17:07:21.709 ICT 2018" lifespan="7534ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59593" at="Mon Aug 20 17:07:21.757 ICT 2018" lifespan="6ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:07:21.814 ICT 2018" lifespan="3ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:59581" at="Mon Aug 20 17:07:21.834 ICT 2018" lifespan="120895ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:07:21.883 ICT 2018">
+  <warn>
+    PREPARE: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.prepare(SenderResponseParticipant.java:21)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:476)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:529)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:256)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:07:21.906 ICT 2018">
+  <warn>
+    ABORT: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.sendMessage(SenderResponseParticipant.java:51)
+	at com.learn.participant.SenderResponseParticipant.abort(SenderResponseParticipant.java:43)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:497)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:450)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:272)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:07:21.946 ICT 2018" lifespan="65ms">
+  <debug>
+    SimpleTransactionManager-0:idle:2
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: com.learn.selector.Selector null
+           selector: null
+            prepare: com.learn.participant.SenderResponseParticipant ABORTED
+              abort: com.learn.participant.SenderResponseParticipant
+    in-transit=2, head=3, tail=1, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=63ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.4/0.4]
+      prepare: com.learn.participant.SenderResponseParticipant [20.1/20.6]
+        abort: com.learn.participant.SenderResponseParticipant [18.5/39.2]
+      end [28.9/68.2]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59593" at="Mon Aug 20 17:07:22.624 ICT 2018" lifespan="891ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59593" at="Mon Aug 20 17:07:22.630 ICT 2018">
+  <session-end/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:07:22.939 ICT 2018" lifespan="1200ms">
+  <debug>
+    SimpleTransactionManager-1:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+            prepare: com.learn.participant.SenderToHostParticipant
+            prepare: com.learn.participant.SendRestfulParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.SenderToHostParticipant
+             commit: com.learn.participant.SendRestfulParticipant
+    in-transit=0, head=3, tail=3, outstanding=0, active-sessions=5/5, tps=1, peak=1, avg=1,00, elapsed=1157ms
+    <profiler>
+      prepare: com.learn.selector.Selector [2.0/2.0]
+      prepare: com.learn.participant.TransactionResponseParticipant [4.0/6.1]
+      prepare: com.learn.participant.SenderResponseParticipant [0.4/6.5]
+      prepare: com.learn.participant.SenderToHostParticipant [0.4/6.9]
+      prepare: com.learn.participant.SendRestfulParticipant [0.3/7.3]
+       commit: com.learn.participant.TransactionResponseParticipant [2.1/9.5]
+       commit: com.learn.participant.SenderResponseParticipant [55.6/65.1]
+       commit: com.learn.participant.SenderToHostParticipant [1015.5/1080.7]
+       commit: com.learn.participant.SendRestfulParticipant [67.8/1148.6]
+      end [59.6/1208.2]
+    </profiler>
+  </debug>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 17:14:00.848 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:14:00.918 ICT 2018" lifespan="33ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:14:00.951 ICT 2018" lifespan="66ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:14:00.973 ICT 2018" lifespan="88ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:14:00.986 ICT 2018" lifespan="102ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:14:01.035 ICT 2018" lifespan="151ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:14:01.387 ICT 2018" lifespan="621ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59604" at="Mon Aug 20 17:14:01.436 ICT 2018" lifespan="1ms">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59614" at="Mon Aug 20 17:15:41.050 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59614" at="Mon Aug 20 17:15:45.245 ICT 2018" lifespan="4176ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59614" at="Mon Aug 20 17:15:45.295 ICT 2018" lifespan="3ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:59604" at="Mon Aug 20 17:15:45.356 ICT 2018" lifespan="103907ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:15:45.401 ICT 2018" lifespan="48ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:15:45.430 ICT 2018" lifespan="1ms">
+  <warn>
+    PREPARE: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.prepare(SenderResponseParticipant.java:21)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:476)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:529)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:256)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:15:45.459 ICT 2018">
+  <warn>
+    ABORT: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.sendMessage(SenderResponseParticipant.java:51)
+	at com.learn.participant.SenderResponseParticipant.abort(SenderResponseParticipant.java:43)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:497)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:450)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:272)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:15:45.481 ICT 2018" lifespan="56ms">
+  <debug>
+    SimpleTransactionManager-1:idle:2
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: com.learn.selector.Selector null
+           selector: null
+            prepare: com.learn.participant.SenderResponseParticipant ABORTED
+              abort: com.learn.participant.SenderResponseParticipant
+    in-transit=2, head=3, tail=1, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=54ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.5/0.5]
+      prepare: com.learn.participant.SenderResponseParticipant [30.4/30.9]
+        abort: com.learn.participant.SenderResponseParticipant [18.3/49.2]
+      end [11.6/60.9]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59614" at="Mon Aug 20 17:15:46.006 ICT 2018" lifespan="732ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59614" at="Mon Aug 20 17:15:46.011 ICT 2018">
+  <session-end/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:15:46.355 ICT 2018">
+  <warn>
+    COMMIT: 1
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderToHostParticipant.sendToRemoteHost(SenderToHostParticipant.java:49)
+	at com.learn.participant.SenderToHostParticipant.commit(SenderToHostParticipant.java:25)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:487)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:428)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:267)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:15:46.394 ICT 2018" lifespan="1118ms">
+  <debug>
+    SimpleTransactionManager-3:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+            prepare: com.learn.participant.SenderToHostParticipant
+            prepare: com.learn.participant.SendRestfulParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.SenderToHostParticipant
+             commit: com.learn.participant.SendRestfulParticipant
+    in-transit=0, head=3, tail=3, outstanding=0, active-sessions=5/5, tps=1, peak=1, avg=1,00, elapsed=1096ms
+    <profiler>
+      prepare: com.learn.selector.Selector [1.4/1.4]
+      prepare: com.learn.participant.TransactionResponseParticipant [6.1/7.6]
+      prepare: com.learn.participant.SenderResponseParticipant [0.4/8.0]
+      prepare: com.learn.participant.SenderToHostParticipant [0.3/8.4]
+      prepare: com.learn.participant.SendRestfulParticipant [3.9/12.3]
+       commit: com.learn.participant.TransactionResponseParticipant [0.6/12.9]
+       commit: com.learn.participant.SenderResponseParticipant [54.9/67.8]
+       commit: com.learn.participant.SenderToHostParticipant [1018.9/1086.8]
+       commit: com.learn.participant.SendRestfulParticipant [8.6/1095.4]
+      end [36.9/1132.4]
+    </profiler>
+  </debug>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 17:18:25.238 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:18:25.288 ICT 2018" lifespan="10ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:18:25.321 ICT 2018" lifespan="44ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:18:25.336 ICT 2018" lifespan="59ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:18:25.351 ICT 2018" lifespan="92ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:18:25.387 ICT 2018" lifespan="103ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:18:25.840 ICT 2018" lifespan="668ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59616" at="Mon Aug 20 17:18:25.910 ICT 2018">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59621" at="Mon Aug 20 17:19:00.057 ICT 2018" lifespan="1ms">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59621" at="Mon Aug 20 17:19:18.721 ICT 2018" lifespan="18639ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59621" at="Mon Aug 20 17:19:18.813 ICT 2018" lifespan="8ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:19:18.880 ICT 2018" lifespan="2ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:59616" at="Mon Aug 20 17:19:18.910 ICT 2018" lifespan="52994ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:19:18.946 ICT 2018">
+  <warn>
+    PREPARE: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.prepare(SenderResponseParticipant.java:21)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:476)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:529)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:256)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:19:19.071 ICT 2018">
+  <warn>
+    ABORT: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.sendMessage(SenderResponseParticipant.java:51)
+	at com.learn.participant.SenderResponseParticipant.abort(SenderResponseParticipant.java:43)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:497)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:450)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:272)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:19:19.189 ICT 2018" lifespan="246ms">
+  <debug>
+    SimpleTransactionManager-3:idle:2
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: com.learn.selector.Selector null
+           selector: null
+            prepare: com.learn.participant.SenderResponseParticipant ABORTED
+              abort: com.learn.participant.SenderResponseParticipant
+    in-transit=2, head=3, tail=1, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=245ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.5/0.5]
+      prepare: com.learn.participant.SenderResponseParticipant [68.1/68.7]
+        abort: com.learn.participant.SenderResponseParticipant [171.8/240.5]
+      end [16.1/256.7]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59621" at="Mon Aug 20 17:19:19.816 ICT 2018" lifespan="1046ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59621" at="Mon Aug 20 17:19:19.824 ICT 2018">
+  <session-end/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:19:19.957 ICT 2018">
+  <warn>
+    COMMIT: 1
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderToHostParticipant.sendToRemoteHost(SenderToHostParticipant.java:49)
+	at com.learn.participant.SenderToHostParticipant.commit(SenderToHostParticipant.java:25)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:487)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:428)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:267)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:19:20.008 ICT 2018" lifespan="1237ms">
+  <debug>
+    SimpleTransactionManager-4:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+            prepare: com.learn.participant.SenderToHostParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.SenderToHostParticipant
+    in-transit=0, head=3, tail=3, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=1218ms
+    <profiler>
+      prepare: com.learn.selector.Selector [3.9/3.9]
+      prepare: com.learn.participant.TransactionResponseParticipant [4.8/8.7]
+      prepare: com.learn.participant.SenderResponseParticipant [0.5/9.3]
+      prepare: com.learn.participant.SenderToHostParticipant [4.6/14.0]
+       commit: com.learn.participant.TransactionResponseParticipant [0.8/14.9]
+       commit: com.learn.participant.SenderResponseParticipant [66.8/81.7]
+       commit: com.learn.participant.SenderToHostParticipant [1134.7/1216.5]
+      end [8.8/1225.3]
+    </profiler>
+  </debug>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 17:22:55.570 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:22:55.619 ICT 2018" lifespan="2ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:22:55.672 ICT 2018" lifespan="53ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:22:55.732 ICT 2018" lifespan="114ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:22:55.785 ICT 2018" lifespan="168ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:22:55.802 ICT 2018" lifespan="185ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:22:56.155 ICT 2018" lifespan="686ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59657" at="Mon Aug 20 17:22:56.350 ICT 2018">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59668" at="Mon Aug 20 17:24:27.725 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59668" at="Mon Aug 20 17:24:34.170 ICT 2018" lifespan="6434ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59668" at="Mon Aug 20 17:24:34.274 ICT 2018" lifespan="7ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:24:34.307 ICT 2018" lifespan="3ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:59657" at="Mon Aug 20 17:24:34.328 ICT 2018" lifespan="97968ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:24:34.348 ICT 2018">
+  <warn>
+    PREPARE: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.prepare(SenderResponseParticipant.java:21)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:476)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:529)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:256)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:24:34.387 ICT 2018">
+  <warn>
+    ABORT: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.sendMessage(SenderResponseParticipant.java:51)
+	at com.learn.participant.SenderResponseParticipant.abort(SenderResponseParticipant.java:43)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:497)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:450)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:272)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:24:34.412 ICT 2018" lifespan="67ms">
+  <debug>
+    SimpleTransactionManager-1:idle:2
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: com.learn.selector.Selector null
+           selector: null
+            prepare: com.learn.participant.SenderResponseParticipant ABORTED
+              abort: com.learn.participant.SenderResponseParticipant
+    in-transit=2, head=3, tail=1, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=66ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.6/0.6]
+      prepare: com.learn.participant.SenderResponseParticipant [38.8/39.4]
+        abort: com.learn.participant.SenderResponseParticipant [19.5/59.0]
+      end [13.2/72.2]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59668" at="Mon Aug 20 17:24:35.117 ICT 2018" lifespan="885ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59668" at="Mon Aug 20 17:24:35.127 ICT 2018" lifespan="1ms">
+  <session-end/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:24:35.304 ICT 2018">
+  <warn>
+    COMMIT: 1
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderToHostParticipant.sendToRemoteHost(SenderToHostParticipant.java:49)
+	at com.learn.participant.SenderToHostParticipant.commit(SenderToHostParticipant.java:25)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:487)
+	at org.jpos.transaction.TransactionManager.commit(TransactionManager.java:428)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:267)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:24:35.336 ICT 2018" lifespan="1100ms">
+  <debug>
+    SimpleTransactionManager-2:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+            prepare: com.learn.participant.SenderToHostParticipant
+            prepare: com.learn.participant.SendRestfulParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.SenderToHostParticipant
+             commit: com.learn.participant.SendRestfulParticipant
+    in-transit=0, head=3, tail=3, outstanding=0, active-sessions=5/5, tps=1, peak=1, avg=1,00, elapsed=1088ms
+    <profiler>
+      prepare: com.learn.selector.Selector [1.7/1.7]
+      prepare: com.learn.participant.TransactionResponseParticipant [6.3/8.1]
+      prepare: com.learn.participant.SenderResponseParticipant [6.0/14.1]
+      prepare: com.learn.participant.SenderToHostParticipant [1.1/15.3]
+      prepare: com.learn.participant.SendRestfulParticipant [2.3/17.7]
+       commit: com.learn.participant.TransactionResponseParticipant [1.0/18.7]
+       commit: com.learn.participant.SenderResponseParticipant [35.9/54.7]
+       commit: com.learn.participant.SenderToHostParticipant [1025.3/1080.0]
+       commit: com.learn.participant.SendRestfulParticipant [6.6/1086.6]
+      end [26.4/1113.0]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:28:56.330 ICT 2018" lifespan="360124ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="Mon Aug 20 17:28:56.339 ICT 2018" lifespan="1ms">
+  <warn>
+    channel-receiver-server-receive
+    Read timeout
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:59657" at="Mon Aug 20 17:28:56.353 ICT 2018" lifespan="262010ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59657" at="Mon Aug 20 17:28:56.360 ICT 2018">
+  <session-end/>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:29:06.530 ICT 2018" lifespan="10ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59689" at="Mon Aug 20 17:29:06.533 ICT 2018" lifespan="3ms">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59689" at="Mon Aug 20 17:34:06.542 ICT 2018" lifespan="300006ms">
+  <receive>
+    <io-timeout/>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59689" at="Mon Aug 20 17:34:06.547 ICT 2018">
+  <session-end/>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:34:06.551 ICT 2018" lifespan="300018ms">
+  <receive>
+    <peer-disconnect/>
+  </receive>
+</log>
+<log realm="org.jpos.q2.iso.ChannelAdaptor" at="Mon Aug 20 17:34:06.558 ICT 2018">
+  <warn>
+    channel-receiver-server-receive
+    <exception name="null">
+    java.io.EOFException
+	at java.io.DataInputStream.readFully(Unknown Source)
+	at org.jpos.iso.channel.ASCIIChannel.getMessageLength(ASCIIChannel.java:93)
+	at org.jpos.iso.BaseChannel.receive(BaseChannel.java:699)
+	at org.jpos.q2.iso.ChannelAdaptor$Receiver.run(ChannelAdaptor.java:317)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:34:16.702 ICT 2018" lifespan="6ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59749" at="Mon Aug 20 17:34:16.766 ICT 2018">
+  <session-start/>
+</log>
+<?xml version="1.0" encoding="UTF-8"?>
+<logger class="org.jpos.util.DailyLogListener">
+<log realm="HostQServer502.server" at="Mon Aug 20 17:39:27.998 ICT 2018">
+  <iso-server>
+    listening on port 2500
+  </iso-server>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:39:28.091 ICT 2018" lifespan="34ms">
+  <info>
+    start Thread[Thread-8,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:39:28.134 ICT 2018" lifespan="85ms">
+  <info>
+    start Thread[Thread-11,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:39:28.169 ICT 2018" lifespan="145ms">
+  <info>
+    start Thread[Thread-10,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:39:28.192 ICT 2018" lifespan="168ms">
+  <info>
+    start Thread[Thread-9,5,main]
+  </info>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:39:28.226 ICT 2018" lifespan="211ms">
+  <info>
+    start Thread[Thread-7,5,main]
+  </info>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:39:28.255 ICT 2018" lifespan="367ms">
+  <connect>
+    localhost:2500
+  </connect>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59843" at="Mon Aug 20 17:39:28.354 ICT 2018" lifespan="1ms">
+  <session-start/>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59856" at="Mon Aug 20 17:41:01.853 ICT 2018">
+  <session-start/>
+</log>
+<log realm="channel/127.0.0.1:59856" at="Mon Aug 20 17:41:05.719 ICT 2018" lifespan="3854ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0200"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:59856" at="Mon Aug 20 17:41:05.769 ICT 2018" lifespan="4ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="channel/127.0.0.1:59843" at="Mon Aug 20 17:41:05.809 ICT 2018" lifespan="97451ms">
+  <receive>
+    <isomsg direction="incoming">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </receive>
+</log>
+<log realm="channel/127.0.0.1:2500" at="Mon Aug 20 17:41:05.848 ICT 2018" lifespan="43ms">
+  <send>
+    <isomsg direction="outgoing">
+      <!-- org.jpos.iso.packager.ISO87APackager -->
+      <field id="0" value="0210"/>
+      <field id="3" value="389000"/>
+      <field id="4" value="000000000000"/>
+      <field id="7" value="0000000820"/>
+      <field id="11" value="143708"/>
+      <field id="12" value="143708"/>
+      <field id="13" value="1005"/>
+      <field id="15" value="1005"/>
+      <field id="32" value="123"/>
+      <field id="39" value="00"/>
+      <field id="41" value="11110001"/>
+      <field id="42" value="111111111100001"/>
+      <field id="48" value="DF01053132383032DF020A30323933333630313438DF090431313031DF0A06313233343536"/>
+      <field id="49" value="360"/>
+    </isomsg>
+  </send>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:41:05.878 ICT 2018">
+  <warn>
+    PREPARE: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.prepare(SenderResponseParticipant.java:19)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:476)
+	at org.jpos.transaction.TransactionManager.prepare(TransactionManager.java:529)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:256)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:41:05.910 ICT 2018">
+  <warn>
+    ABORT: 2
+    <exception name="null">
+    java.lang.NullPointerException
+	at com.learn.participant.SenderResponseParticipant.sendMessage(SenderResponseParticipant.java:46)
+	at com.learn.participant.SenderResponseParticipant.abort(SenderResponseParticipant.java:39)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:497)
+	at org.jpos.transaction.TransactionManager.abort(TransactionManager.java:450)
+	at org.jpos.transaction.TransactionManager.run(TransactionManager.java:272)
+	at java.lang.Thread.run(Unknown Source)
+    </exception>
+  </warn>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:41:05.947 ICT 2018" lifespan="74ms">
+  <debug>
+    SimpleTransactionManager-1:idle:2
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: com.learn.selector.Selector null
+           selector: null
+            prepare: com.learn.participant.SenderResponseParticipant ABORTED
+              abort: com.learn.participant.SenderResponseParticipant
+    in-transit=2, head=3, tail=1, outstanding=0, active-sessions=5/5, tps=0, peak=0, avg=0,00, elapsed=72ms
+    <profiler>
+      prepare: com.learn.selector.Selector [0.4/0.4]
+      prepare: com.learn.participant.SenderResponseParticipant [33.7/34.1]
+        abort: com.learn.participant.SenderResponseParticipant [17.8/52.0]
+      end [23.7/75.8]
+    </profiler>
+  </debug>
+</log>
+<log realm="channel/127.0.0.1:59856" at="Mon Aug 20 17:41:06.663 ICT 2018" lifespan="922ms">
+  <receive>
+    <peer-disconnect>Connection reset</peer-disconnect>
+  </receive>
+</log>
+<log realm="HostQServer502.server.session/127.0.0.1:59856" at="Mon Aug 20 17:41:06.672 ICT 2018">
+  <session-end/>
+</log>
+<log realm="org.jpos.transaction.TransactionManager" at="Mon Aug 20 17:41:06.866 ICT 2018" lifespan="1120ms">
+  <debug>
+    SimpleTransactionManager-0:idle:1
+            prepare: com.learn.selector.Selector NO_JOIN
+           selector: Transaction
+            prepare: com.learn.participant.TransactionResponseParticipant
+            prepare: com.learn.participant.SenderResponseParticipant
+            prepare: com.learn.participant.SenderToHostParticipant
+            prepare: com.learn.participant.SendRestfulParticipant
+             commit: com.learn.participant.TransactionResponseParticipant
+             commit: com.learn.participant.SenderResponseParticipant
+             commit: com.learn.participant.SenderToHostParticipant
+             commit: com.learn.participant.SendRestfulParticipant
+    in-transit=0, head=3, tail=3, outstanding=0, active-sessions=5/5, tps=1, peak=1, avg=1,00, elapsed=1115ms
+    <profiler>
+      prepare: com.learn.selector.Selector [4.2/4.2]
+      prepare: com.learn.participant.TransactionResponseParticipant [5.7/10.0]
+      prepare: com.learn.participant.SenderResponseParticipant [0.4/10.4]
+      prepare: com.learn.participant.SenderToHostParticipant [0.4/10.9]
+      prepare: com.learn.participant.SendRestfulParticipant [3.1/14.1]
+       commit: com.learn.participant.TransactionResponseParticipant [0.6/14.7]
+       commit: com.learn.participant.SenderResponseParticipant [24.7/39.5]
+       commit: com.learn.participant.SenderToHostParticipant [1068.3/1107.9]
+       commit: com.learn.participant.SendRestfulParticipant [7.4/1115.3]
+      end [18.7/1134.1]
+    </profiler>
+  </debug>
+</log>
