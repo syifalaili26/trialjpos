@@ -2,34 +2,32 @@ package com.learn.participant;
 
 import java.io.Serializable;
 
-import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.transaction.Context;
 import org.jpos.transaction.TransactionParticipant;
 
 import com.constant.Constants;
+import com.learn.repository.Repository;
 
-public class TransactionResponseParticipant implements TransactionParticipant{
+public class SendRestfulParticipant implements TransactionParticipant{
     @Override
     public int prepare(long l, Serializable serializable) {
-        Context ctx = (Context)serializable;
-        ISOMsg respMsg = (ISOMsg)ctx.get(Constants.RESPONSE_KEY);
-        try {
-            respMsg.set(39,"00");
-            ctx.put(Constants.RESPONSE_KEY,respMsg);
-        } catch (ISOException e) {
-            e.printStackTrace();
-        }
+        String test = "Masuk 2";
         return PREPARED;
     }
 
     @Override
     public void commit(long l, Serializable serializable) {
-
+        putRestResponse((Context)serializable);
     }
 
     @Override
     public void abort(long l, Serializable serializable) {
-    	
+
+    }
+    private void putRestResponse(Context context){
+        Repository repository = Repository.getInstance();
+        ISOMsg respMessage = (ISOMsg)context.get(Constants.RESPONSE_KEY);
+        repository.putMessage(respMessage);
     }
 }

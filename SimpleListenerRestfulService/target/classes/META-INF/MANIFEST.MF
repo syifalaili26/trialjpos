@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: SimpleListenerRestfulService
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: Dwiky Okka Tjahjanto
+Built-By: Syifa
 Implementation-Vendor-Id: com.learn
-Build-Jdk: 1.8.0_181
+Build-Jdk: 1.8.0_111
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/SimpleListenerRestfulService
 Created-By: Maven Integration for Eclipse

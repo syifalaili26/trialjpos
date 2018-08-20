@@ -11,50 +11,43 @@ import org.jpos.transaction.TransactionParticipant;
 
 import com.constant.Constants;
 
-public class SenderResponseParticipant implements TransactionParticipant {
+public class SenderResponseParticipant implements TransactionParticipant{
+    @Override
+    public int prepare(long l, Serializable serializable) {
+        Context ctx = (Context)serializable;
+        ISOMsg respMsg = (ISOMsg)ctx.get(Constants.RESPONSE_KEY);
+        String bit39 = respMsg.getString(39);
+        if(bit39==null){
+            try {
+                respMsg.set(39,"06");
 
-	@Override
-	public int prepare(long length, Serializable serializable) {
-		// TODO Auto-generated method stub
-		Context context = (Context) serializable;
-		ISOMsg respMessage = (ISOMsg) context.get(Constants.RESPONSE_KEY);
-		String bit39 = respMessage.getString(39);
-		if(bit39 == null) {
-			try {
-				respMessage.set(39, "06");
-			}
-			catch(ISOException p) {
-				p.printStackTrace();
-			}
-		}
-		context.put(Constants.RESPONSE_KEY, respMessage);
-		return PREPARED;
-	}
+            } catch (ISOException e) {
+                e.printStackTrace();
+            }
+        }
+        ctx.put(Constants.RESPONSE_KEY,respMsg);
+        return PREPARED;
+    }
 
-	@Override
-	public void commit(long length, Serializable serializable) {
-		// TODO Auto-generated method stub
-		sendMessage((Context) serializable);
-	}
+    @Override
+    public void commit(long l, Serializable serializable) {
+        sendMessage((Context)serializable);
+    }
 
-	@Override
-	public void abort(long length, Serializable serializable) {
-		// TODO Auto-generated method stub
-		sendMessage((Context) serializable);
-	}
-
-	private void sendMessage(Context context) {
-		// TODO Auto-generated method stub
-		ISOSource source = (ISOSource) context.get(Constants.RESOURCE_KEY);
-		ISOMsg messageResp = (ISOMsg) context.get(Constants.RESPONSE_KEY);
-		try {
-			source.send(messageResp);
-		}
-		catch(IOException p) {
-			p.printStackTrace();
-		}
-		catch(ISOException p) {
-			p.printStackTrace();
-		}
-	}
+    @Override
+    public void abort(long l, Serializable serializable) {
+        sendMessage((Context)serializable);
+    }
+    // Responsible to send response to the client
+    private void sendMessage(Context context){
+        ISOSource source = (ISOSource)context.get(Constants.RESOURCE_KEY);
+        ISOMsg msgResp = (ISOMsg)context.get(Constants.RESPONSE_KEY);
+        try {
+            source.send(msgResp);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ISOException e) {
+            e.printStackTrace();
+        }
+}
 }

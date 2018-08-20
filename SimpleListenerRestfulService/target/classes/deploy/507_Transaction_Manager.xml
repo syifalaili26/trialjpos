@@ -10,6 +10,8 @@
         <property name="0800" value="Network" />
     </participant>
     <participant class="com.learn.participant.SenderResponseParticipant" logger="Q2"/>
+    <participant class="com.learn.participant.SenderToHostParticipant" logger="Q2"/>
+    <participant class="com.learn.participant.SendRestfulParticipant" logger="Q2"/>
     <group name="Transaction">
         <participant class="com.learn.participant.TransactionResponseParticipant" logger="Q2" />
     </group>
